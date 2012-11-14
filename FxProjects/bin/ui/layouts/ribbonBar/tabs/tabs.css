@@ -1,0 +1,128 @@
+/* 
+    Document   : tabs
+    Created on : Mar 23, 2012, 2:12:26 PM
+    Description:
+        Style the Ribbon Bar.
+*/
+
+/**
+ * This style creates the gradient effect across the entire "Ribbon Strip"
+ * background. This is an HBox in FX application. You will find the HBox 
+ * container in the HomeTab.java and InsertTab.java classes.
+ */
+#container {
+    -fx-padding: 3px;
+    -fx-background-color: 
+        linear-gradient(#ffffff 0%, #ced3da 4%, #c1c6cf 17%, #b4bbc5 18%, #e5ebeb 100%);
+        
+}
+
+/**
+ * This style creates the gradient effect and rounded borders for each content
+ * area in Ribbon Strip. This is a VBox in FX application. You will find this 
+ * style in all classes like Clipboard.java, Font.java, InsertTab.java and 
+ * Tables.java.
+ */
+.toolbarContainer {
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#eef1f6 0%, #e1e6ee 14%, #d5dbe7 15%, #eef4f4 79%, 
+        #ced4e6 79%, #afb6c8 100%);
+    
+    -fx-background-insets: 1 0 1 1, 1, 2 ;
+    -fx-background-radius: 5,4,3;
+    -fx-padding: 4 8 0 8;
+}
+
+/**
+ * This selector simply applies a font color to each label in the Toolbar 
+ * Container Areas. These include labels like Clipboard, Font, Insert, Colorful
+ * Icons, etc...
+ */
+.ribbonLabel {
+    -fx-text-fill: #535459;
+}
+
+/**
+ * Selector for each toggle button. This is a general style. Find examples
+ * of use in the Font.java class.
+ */
+.ribbonToggleButton {
+    -fx-text-fill: #000000;
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#eef1f6 0%, #e1e6ee 14%, #d5dbe7 15%, #eef4f4 79%, 
+        #ced4e6 79%, #afb6c8 100%);
+    
+    -fx-background-insets: 1 0 1 1, 1, 2 ;
+    -fx-background-radius: 5,4,3;
+    -fx-padding: 5 6 5 6;
+    
+}
+
+/**
+ * Hover effect for the toggle button.
+ */
+.ribbonToggleButton:hover {
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#fef7d5 0%, #fae5a8 14%, #ffd048 15%, #ffe59f 78%, 
+        #ffe498 79%, #fff9cc 100%);    
+}
+
+/**
+ * Selected (when pressed) effect for the toggle button.
+ */
+.ribbonToggleButton:selected {
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#fbdbb5 0%, #fec778 14%, #ffa636 15%, #fdeb9f 78%, 
+        #dfcd82 79%, #f0e7bf 100%);
+}
+
+/**
+ * To create the effect of having multiple toggle buttons grouped together, I 
+ * adjusted the background insets and radius. Basically I am ajusting the 
+ * TOP, RIGHT, BOTTOM, LEFT of each layer. So each layer is separated by a
+ * comma and CSS statement is terminated by ending semi colon. The bottom layer
+ * is first and each subsequent layer is stacked on top.
+ */
+ 
+ /**
+  * Middle Toggle Button
+  */
+.middleToggleButton {
+    -fx-background-insets: 0 0 0 1, 1 0 1 0, 2 0 2 0;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+ /**
+  * Left side Toggle Button
+  */
+.leftToggleButton {
+    -fx-background-insets: 0 0 0 1, 1 0 1 1, 2 0 2 2;
+    -fx-background-radius: 0 0 0 5, 4 0 0 4, 3 0 0 3;
+}
+
+ /**
+  * Right side Toggle Button
+  */
+.rightToggleButton {
+    -fx-background-insets: 0 1 0 0, 1 1 1 0, 2 2 2 0 ;
+    -fx-background-radius: 0 5 0 0, 0 4 4 0, 0 3 3 0;  
+}
+
+ /**
+  * I added some padding to make the ChoiceBoxes a little taller.
+  */
+#fontFamilyChoiceBox {
+    -fx-padding: 3 5 3 5;
+}
+
+#fontSizeChoiceBox {
+    -fx-padding: 3 5 3 5;
+}

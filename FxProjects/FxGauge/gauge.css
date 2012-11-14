@@ -1,0 +1,49 @@
+.radial {
+	-fx-fill: linear-gradient(#f2f2f2, #d6d6d6);
+}
+
+.bottom {
+	-fx-fill: linear-gradient(#f2f2f2, #d6d6d6);
+	-fx-background-radius: 8;
+}
+	
+.center {
+	-fx-fill: linear-gradient(#d6d6d6, #ffffff);
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 20, 0, 0, 0);
+}
+
+.text {
+	-fx-fill: #666060;
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+}
+
+.arrow {
+	-fx-stroke: radial-gradient(center 50% 50%, radius 100%, #5f5757 0%, #3e3838 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 20, 0, 0, 0);
+}
+
+.ribbon-0{
+	-fx-fill: radial-gradient(center 50% 50%, radius 100%, #ff5a00 90%, #e24912 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(15, 15, 15, 0.2), 10, 0, 0, 0);
+}
+
+.ribbon-1{
+	-fx-fill: radial-gradient(center 50% 50%, radius 100%, #faec31 90%, #ffb60f 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(15, 15, 15, 0.2), 10, 0, 0, 0);
+}
+
+.ribbon-2{
+	-fx-fill: radial-gradient(center 50% 50%, radius 100%, #5a8e22 90%, #407208 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(15, 15, 15, 0.2), 10, 0, 0, 0);
+}
+
+.ribbon-3{
+	-fx-fill: radial-gradient(center 50% 50%, radius 100%, #327011 90%, #1e4b05 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(8, 8, 8, 0.2), 10, 0, 0, 0);
+}
+
+.ribbon-4{
+	-fx-fill: radial-gradient(center 50% 50%, radius 100%, #1f3d0e 90%, #112a03 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(15, 15, 15, 0.2), 10, 0, 0, 0);
+}

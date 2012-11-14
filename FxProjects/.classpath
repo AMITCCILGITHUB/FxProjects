@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="FacebookLogin"/>
+	<classpathentry kind="src" path="Concurrency"/>
+	<classpathentry kind="src" path="FxSlider"/>
+	<classpathentry kind="src" path="Sample3D"/>
+	<classpathentry kind="src" path="VideoLibrary"/>
+	<classpathentry kind="src" path="RibbonBar"/>
+	<classpathentry kind="src" path="FancyPreloader"/>
+	<classpathentry kind="src" path="ScreenCapture"/>
+	<classpathentry kind="src" path="FxGauge"/>
+	<classpathentry kind="src" path="FlipBox"/>
+	<classpathentry kind="src" path="Presenter"/>
+	<classpathentry kind="src" path="EarthCubeX"/>
+	<classpathentry kind="src" path="RadialMenu"/>
+	<classpathentry kind="src" path="PhotoCube"/>
+	<classpathentry kind="src" path="DockFx"/>
+	<classpathentry kind="src" path="CircularMenu"/>
+	<classpathentry kind="src" path="Blog-Demos"/>
+	<classpathentry kind="src" path="FXExperienceControls"/>
+	<classpathentry kind="src" path="FXExperienceTools"/>
+	<classpathentry kind="src" path="FxControls"/>
+	<classpathentry kind="src" path="Kiosk"/>
+	<classpathentry kind="src" path="Video3DBall"/>
+	<classpathentry kind="src" path="CellSpan"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="at.bestsolution.efxclipse.tooling.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="src" path="WeeklySchedular"/>
+	<classpathentry kind="lib" path="C:/EclipseProjects/libs/lucene-core-3.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/EclipseProjects/libs/lucene-grouping-3.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/EclipseProjects/libs/cell-span-0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

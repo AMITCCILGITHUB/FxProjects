@@ -1,0 +1,22 @@
+.autosuggestbox {
+	-fx-border-color: black;	
+}
+
+.selecteditem {
+	-fx-background-color: lightblue;
+	-fx-background-radius: 12;
+	-fx-background-insets: 4 0 4 0;
+}
+
+.button {
+	-fx-margin: 0;
+	-fx-padding: 0;
+	-fx-text-fill: black;
+	-fx-background-radius: 12;
+	-fx-background-color: transparent;
+}
+
+.button:hover {
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0.5,
+		0, 0 );
+}

@@ -1,0 +1,14 @@
+/* 
+    Document   : App
+    Created on : Mar 23, 2012, 1:53:13 PM
+    Description:
+        Some general styles not related to Ribbon Menu could go here. 
+*/
+
+/**
+ * Set the background color of the Scene.
+ */
+#app { 
+    -fx-background-color: #333;
+}
+

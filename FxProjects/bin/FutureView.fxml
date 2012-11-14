@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.ts.examples.FutureController">
+    <VBox>
+        <HBox>
+            <Label text="Message:" />
+            <TextField fx:id="futureMessageTextField" />
+        </HBox>
+        <HBox>
+            <Label text="Duration:"/> 
+            <Slider min="0" max="30.5" fx:id="duration" showTickMarks="true" showTickLabels="true" majorTickUnit="15"/>
+        </HBox>
+        <Button text="Begin" onAction="#beginFuture" fx:id="beginFutureButton" />
+    </VBox>
+    <Separator/>
+    <VBox>
+        <GridPane>
+            <Label text="Output:"/>
+            <ProgressIndicator fx:id="spinner" GridPane.columnIndex="1" visible="false"/>
+            <VBox GridPane.rowIndex="1">
+                <TextArea text="Not Started" fx:id="logTextArea"/>
+            </VBox>
+            <VBox GridPane.rowIndex="1" GridPane.columnIndex="1">
+                <Button text="isDone()" onAction="#isFutureDone" fx:id="isDoneButton" />
+                <Button text="cancel()" onAction="#cancelFuture" fx:id="cancelButton" />
+                <Button text="get()" onAction="#getFuture" fx:id="getButton" />
+            </VBox>
+        </GridPane>
+    </VBox>
+</VBox>

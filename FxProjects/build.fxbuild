@@ -1,0 +1,2 @@
+jfx.build.stagingdir = ${workspace}/FxProjects/build
+jfx.build.apptitle = FxProjects
